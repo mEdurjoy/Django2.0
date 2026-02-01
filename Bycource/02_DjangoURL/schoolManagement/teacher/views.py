@@ -2,6 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 def teacher_dashboard(request):
-    return HttpResponse("Welcome to the teacher Dashboard")
+    return render(request, 'dashboard.html')
 def teacher_profile(request):
-    return HttpResponse("This is the Teacher Profile Page")
+    return render(request, 'profile.html')
